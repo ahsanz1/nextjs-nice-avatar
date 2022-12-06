@@ -1,0 +1,32 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "serve": "npm run firebase-serve && npm run dev",
+    "firebase-serve": "firebase serve",
+    "firebase-emulator": "firebase emulators:start --only functions",
+    "firebase-shell": "firebase functions:shell",
+    "firebase-start": "npm run shell",
+    "firebase-deploy": "firebase deploy --only functions",
+    "firebase-logs": "firebase functions:log",
+    "start": "next start",
+    "build-and-deploy": "npm run build && npm run firebase-deploy"
+  },
+  "main": "server.js",
+  "dependencies": {
+    "dom-to-image": "^2.6.0",
+    "firebase": "^9.14.0",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "next": "^13.0.6",
+    "node-html-to-image": "^3.2.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-nice-avatar": "^1.2.4"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  }
+}
